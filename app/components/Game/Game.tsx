@@ -8,44 +8,33 @@ import {
   gameSlice,
   useSelector,
   useDispatch,
-  selectGame,
+  selectScore,
 } from '@/lib/redux'
+import { CanvasBoard } from './CanvasBoard'
 
 export const Game = () => {
   const dispatch = useDispatch()
-  const game = useSelector(selectGame)
-  const [incrementAmount, setIncrementAmount] = useState(2)
+  const score = useSelector(selectScore)
+  // const [incrementAmount, setIncrementAmount] = useState(2)
 
   return (
     <div>
+      
+      <div>Score: {score}</div>
+      <CanvasBoard height={400} width={800} />
       <div>
-        <button
+        {/* <button
           aria-label="Decrement value"
           onClick={() => dispatch(gameSlice.actions.decrement())}
         >
           -
         </button>
-        <span>{game.value}</span>
         <button
           aria-label="Increment value"
           onClick={() => dispatch(gameSlice.actions.increment())}
         >
           +
-        </button>
-      </div>
-      <div>
-        <input
-          aria-label="Set increment amount"
-          value={incrementAmount}
-          onChange={(e) => setIncrementAmount(Number(e.target.value ?? 0))}
-        />
-        <button
-          onClick={() =>
-            dispatch(gameSlice.actions.incrementByAmount(incrementAmount))
-          }
-        >
-          Add Amount
-        </button>
+        </button> */}
       </div>
     </div>
   )
