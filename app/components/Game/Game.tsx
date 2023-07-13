@@ -20,8 +20,8 @@ export const Game = () => {
   return (
     <div style={{display: "flex"}}>
 
-      <div>
-        <h3>Instructiones</h3>
+      <div style={{ padding: "1em" }}>
+        <h3 style={{margin: 0}}>Instructiones</h3>
         <div>Para es press "d" to start</div><br />
 
         <strong>Movement optiones:</strong>
