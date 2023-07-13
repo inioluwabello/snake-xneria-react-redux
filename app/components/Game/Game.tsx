@@ -18,7 +18,7 @@ export const Game = () => {
   // const [incrementAmount, setIncrementAmount] = useState(2)
 
   return (
-    <div style={{display: "flex"}}>
+    <div style={{display: "block"}}>
 
       <div style={{ padding: "1em" }}>
         <h3 style={{margin: 0}}>Instructiones</h3>
@@ -35,7 +35,7 @@ export const Game = () => {
 
       <div>
         <div>Score: {score}</div>
-        <CanvasBoard height={300} width={700} />
+        <CanvasBoard height={400} width={700} />
       </div>
 
     </div>
