@@ -22,20 +22,15 @@ export const Game = () => {
       
       <div>Score: {score}</div>
       <CanvasBoard height={400} width={800} />
-      <div>
-        {/* <button
-          aria-label="Decrement value"
-          onClick={() => dispatch(gameSlice.actions.decrement())}
-        >
-          -
-        </button>
-        <button
-          aria-label="Increment value"
-          onClick={() => dispatch(gameSlice.actions.increment())}
-        >
-          +
-        </button> */}
-      </div>
+      <div>Instructiones</div>
+      <div>Para es press "d" to start</div>
+      <div>Movement optiones:</div>
+      <div>Left: "a"</div>
+      <div>Right: "d"</div>
+      <div>Up: "w"</div>
+      <div>Down: "s"</div><br />
+
+      <div className='text-mute muted cool-grey'>This game is incomplete, but enjoy :)</div>
     </div>
   )
 }
